@@ -20,7 +20,7 @@ dataframe_AmazonKinesis= glueContext.create_data_frame.from_options(
     connection_type="kinesis",
     connection_options={
         "typeOfData": "kinesis",
-        "streamARN": "arn:aws:kinesis:ap-south-1:722285188889:stream/mongo-to-kinesis-stream-test",
+        "streamARN": "arn:aws:kinesis:region:722285188889:stream/stream_name",
         "classification": "json",
         "startingPosition": "latest",
         "inferSchema": "true",
